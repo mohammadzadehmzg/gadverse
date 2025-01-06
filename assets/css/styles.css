@@ -1,0 +1,260 @@
+@font-face {
+    font-family: primary;
+    src: url("../font/GoodTimesRg-Regular/good-times-rg.ttf");
+}
+
+@font-face {
+    font-family: seccend;
+    src: url("../font/walkway/Walkway.ttf");
+}
+
+body {
+    font-size: 16px;
+    font-family: seccend;
+    background-color: #1A1A1A;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.sec-color {
+    color: #00FFFF;
+}
+
+.primary-font {
+    font-family: primary !important;
+}
+
+
+.home-search-input {
+    height: 32px;
+    background-color: #333333;
+    border: 0;
+    border-radius: 1rem;
+}
+
+.home-search-input::placeholder {
+    color: #666666 !important;
+    opacity: 1; /* Firefox */
+}
+
+.home-search-inpu::-ms-input-placeholder { /* Edge 12-18 */
+    color: #ffffff !important;
+}
+
+.banner-section {
+    background-image: url("../img/Banner_pic.webp");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-section > .banner-text {
+    /*position: absolute;*/
+    padding-top: 10rem;
+    padding-left: 1rem;;
+}
+
+.banner-section > .banner-text > h2.sec-color {
+    font-size: 2.5rem !important;
+    font-family: primary;
+}
+
+.banner-section > .banner-text > h2 {
+    font-size: 1.8rem !important;
+    font-family: primary;
+}
+
+.banner-section > .banner-text > p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-top: 8rem;
+}
+
+.custom-btn {
+    text-transform: uppercase;
+    margin-top: 1rem;
+    background-color: #474e4a73;
+    border: 0;
+    padding: .5rem;
+    color: #ffffff;
+}
+
+.time-to-dive-bg {
+    background: #182C2C;
+    width: 116%;
+    height: 146px;
+    margin-left: -28px;
+    transform: rotate(5deg);
+    margin-top: 12rem;
+    z-index: -1;
+    position: relative;
+}
+
+.time-to-sec {
+    font-size: 6rem;
+    margin-top: -10rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.product-section-title {
+    padding-left: 2rem;
+    text-transform: uppercase;
+}
+
+.product-section-box {
+    overflow-x: scroll;
+    /*scrollbar-color: #333333;*/
+}
+
+.product-section-box::-webkit-scrollbar {
+    width: 15px;
+    /*background: #333333;*/
+}
+
+.product-section-box::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgb(۵۱, ۵۱, ۵۱);*/
+    border-radius: 15px;
+}
+
+.product-section-box::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    /*-webkit-box-shadow: inset 0 0 6px rgb(۵۱, ۵۱, ۵۱);*/
+    background: #333333;
+}
+
+.product-section-title::after {
+    content: "";
+    border-bottom: 1px solid #00FFFF;
+    display: block;
+    width: 260px;
+    height: 1px;
+    margin-left: -32px;
+}
+
+.product-card {
+    background-color: #192626;
+}
+
+.product-card > .card-body > .card-title {
+    font-weight: bold;
+}
+
+.get-start-section {
+    background-image: url("../img/get_started_back-12.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.get-start-section > h2 {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.get-s1, .get-s2 {
+    position: relative;
+}
+
+.get-s1::after, .get-s2::after {
+    content: "";
+    position: absolute;
+}
+
+.need-support-section {
+
+}
+
+.need-support-img {
+    padding-top: 9rem;
+}
+
+.need-support-img > img {
+    width: 100%;
+}
+
+.need-buttons-box {
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*right: 26rem;*/
+    text-align: center;
+    margin-top: 2rem;
+    /*bottom: 6rem;*/
+}
+
+.need-btn {
+    border: 1px solid #00ffff;
+    background-color: #333333;
+    color: #00ffff;
+    padding: .75rem;
+    border-radius: 1.35rem;
+}
+
+.need-btn2 {
+    border: 1px solid #ffffff;
+    background-color: #333333;
+    color: #ffffff;
+    padding: .75rem;
+    border-radius: 1.35rem;
+}
+
+
+.who-we-1 {
+    padding-left: 14rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .banner-section > .banner-text {
+        /*position: absolute;*/
+        padding-top: 16rem;
+        padding-left: 3rem;;
+    }
+
+    .banner-section > .banner-text > h2.sec-color {
+        font-size: 7rem !important;
+    }
+
+    .banner-section > .banner-text > h2 {
+        font-size: 4rem !important;
+    }
+
+    .time-to-sec {
+        font-size: 10rem;
+    }
+
+    .get-start-section > h2 {
+        font-size: 7rem;
+        padding-top: 16rem;
+    }
+
+    .get-s1::after, .get-s2::after {
+        border-bottom: 2px solid #00FFFF;
+        width: 54%;
+        top: 4.5rem;
+        left: 18rem;
+    }
+
+    .need-support-img {
+        padding-top: 7rem;
+    }
+
+    .need-support-img > img {
+        width: 50%;
+    }
+
+    .need-buttons-box {
+        position: absolute;
+        left: 0;
+        right: 26rem;
+        margin: auto;
+        bottom: 6rem;
+    }
+}
+

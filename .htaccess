@@ -1,0 +1,38 @@
+RewriteEngine on
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteCond %{REQUEST_FILENAME} !/(css|fonts|ico|js)/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+#RewriteRule ^([^/\.]+)/?$ index.php?url=$1 [L,QSA]
+#RewriteRule ^folder/?$ - [F,L]
+
+#deny from all
+#RewriteRule ^(.*)$ /requests.php?url=$1 [L,QSA]
+#Order Allow,Deny
+#Allow from 192.168.30.200
+#RewriteRule ^folder/?$ - [F,L]
+
+#Order Allow,Deny
+#Deny from all
+
+#<FilesMatch "\.(jpg|gif|png|php|json)$">
+#    Order allow,deny
+#   Allow from all
+#</FilesMatch>
+#<Files package.json>
+#order allow,deny
+#deny from all
+#</Files>
+Options -indexes
+ErrorDocument 404 /404.php
+ErrorDocument 403 /404.php
+
+#RedirectMatch 403 ^/controller/?$
+#RedirectMatch 403 ^/app/?$
+#RedirectMatch 403 ^/view/?$
+#RedirectMatch 403 ^/vendor/?$
+#RedirectMatch 403 ^/assets/?$
+RedirectMatch 403 ^/package.json/?$
+RedirectMatch 403 ^/.gitignore/?$
+RedirectMatch 403 ^/app.js/?$

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="192.168.30.11" id="a2c1454f-6c4e-422b-ab87-86f44447d6bb" port="2121" customName="automation-server" nameFormat="CUSTOM" username="mmz@mehrbarpost.com" useOpenSSHConfig="true">
+        <option name="customName" value="automation-server" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>
