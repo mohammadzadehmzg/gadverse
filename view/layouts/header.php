@@ -47,7 +47,7 @@
                                 <a class="nav-link text-white" href="#">CATEGORIES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">COMPARE PRODUCTS</a>
+                                <a class="nav-link text-white" href="/compare_device">COMPARE PRODUCTS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="#">DIGISTARS</a>

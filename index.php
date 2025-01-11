@@ -90,13 +90,13 @@ if ($uri == '/') {
 //
 //    } else {
 
-//    if (isset($url[1]) && file_exists("./controller/" . $url[0] . "/" . $url[1] . ".php")) {
-//        require_once "./controller/" . $url[0] . "/" . $url[1] . ".php";
-//    } else if (file_exists("./controller/" . $url[0]) && !file_exists(isset($url[1]) . ".php")) {
-//        require_once "./controller/" . $url[0] . "/index.php";
-//    } else {
-//        header('location: dashboard');
-//    }
+    if (isset($url[1]) && file_exists("./controller/" . $url[0] . "/" . $url[1] . ".php")) {
+        require_once "./controller/" . $url[0] . "/" . $url[1] . ".php";
+    } else if (file_exists("./controller/" . $url[0]) && !file_exists(isset($url[1]) . ".php")) {
+        require_once "./controller/" . $url[0] . "/index.php";
+    } else {
+        require_once "./controller/home/index.php";
+    }
 
 //    }
 

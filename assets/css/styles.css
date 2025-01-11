@@ -78,6 +78,7 @@ body {
     border: 0;
     padding: .5rem;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .time-to-dive-bg {
@@ -213,12 +214,12 @@ body {
 
     .banner-section > .banner-text {
         /*position: absolute;*/
-        padding-top: 16rem;
+        padding-top: 10rem;
         padding-left: 3rem;;
     }
 
     .banner-section > .banner-text > h2.sec-color {
-        font-size: 7rem !important;
+        font-size: 5rem !important;
     }
 
     .banner-section > .banner-text > h2 {
@@ -245,9 +246,6 @@ body {
         padding-top: 7rem;
     }
 
-    .need-support-img > img {
-        width: 50%;
-    }
 
     .need-buttons-box {
         position: absolute;
@@ -255,6 +253,17 @@ body {
         right: 26rem;
         margin: auto;
         bottom: 6rem;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .banner-section > .banner-text > h2.sec-color {
+        font-size: 7rem !important;
+    }
+
+    .need-support-img > img {
+        width: 50%;
     }
 }
 

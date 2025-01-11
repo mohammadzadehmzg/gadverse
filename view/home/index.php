@@ -13,7 +13,7 @@
                 journey starts here! </p>
             <div class="d-flex">
                 <button class="custom-btn">explore reviews</button>
-                <button class="custom-btn ms-2">start comparing</button>
+                <a href="/compare_device" class="custom-btn ms-2">start comparing</a>
             </div>
         </div>
     </div>
